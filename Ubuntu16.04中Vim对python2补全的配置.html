@@ -1,0 +1,24 @@
+<p>打开终端，执行下列命令</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs avrasm">wget -qO https://raw<span class="hljs-preprocessor">.github</span><span class="hljs-preprocessor">.com</span>/ma5174/vim/master/setup<span class="hljs-preprocessor">.sh</span> | sh -<span class="hljs-built_in">x</span></code></pre>
+
+<p>然后</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs lasso">sudo apt<span class="hljs-attribute">-get</span> install vim<span class="hljs-attribute">-gtk3</span><span class="hljs-attribute">-py2</span></code></pre>
+
+<p>利用如下命令将python3切换为python2</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs bash"><span class="hljs-built_in">sudo</span> update-alternatives --config vim</code></pre>
+
+<p>可以用<code>vim --version</code>来查看结果，出现了<code>+python</code>就算成功了。 <br>
+最后，安装<code>jedi-vim</code></p>
+
+
+
+<pre class="prettyprint"><code class=" hljs avrasm">git clone --recursive https://github<span class="hljs-preprocessor">.com</span>/davidhalter/jedi-vim<span class="hljs-preprocessor">.git</span>  ~/<span class="hljs-preprocessor">.vim</span>/bundle/jedi-vim</code></pre>
